@@ -1,0 +1,34 @@
+import discord
+from discord.ext import commands
+
+class help(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+        self.text_channel_text = []
+        
+    @commands.Cog.listener()
+    async def on_ready(self):
+        print("Loaded: Helper")
+
+    async def send_to_all(self,msg):
+        for text_channel in self.text_channel_text:
+            await text_channel.send(msg)
+
+    @commands.command(name="help", help="Displays all available commands")
+    async def help(self, ctx):
+        await ctx.send( """
+```
+General commands:
+.ping - Tests if bot is responsive
+.play <keywords/url> - Finds the song on youtube and plays it in your current voicechannel. Will resume if paused.
+.queue - Shows the music queue
+.skip - skips the current song
+.clear - Empties the queue
+.quit - Stops the current song, clears the queue and disconnects the bot
+.pause - Pauses the current song
+.resume - Resumes the song
+```
+""")
+
+async def setup(bot):
+    await bot.add_cog(help(bot))
