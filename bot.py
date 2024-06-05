@@ -12,7 +12,7 @@ load_dotenv()
 TOKEN = os.getenv('discord_token')
 intents = discord.Intents.all()
 intents.members = True
-bot = commands.Bot(command_prefix=".", intents=intents, help_command=None)
+bot = commands.Bot(command_prefix="/", intents=intents, help_command=None)
 
 async def load():
     for filename in os.listdir('./cogs'):
