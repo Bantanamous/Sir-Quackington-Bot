@@ -19,14 +19,14 @@ class help(commands.Cog):
         await ctx.send( """
 ```
 General commands:
-/ping - Tests if bot is responsive
-/play <keywords/url> - Finds the song on youtube and plays it in your current voicechannel. Will resume if paused.
-/queue - Shows the music queue
-/skip - skips the current song
-/clear - Empties the queue
-/stop - Stops the current song, clears the queue and disconnects the bot
-/pause - Pauses the current song
-/resume - Resumes the song
+.ping - Tests if bot is responsive
+.play <keywords/url> - Finds the song on youtube and plays it in your current voicechannel. If a song is already playing, it will be added to the queue.
+.queue - Shows the music queue
+.skip - Skips the current song
+.clear - Empties the queue
+.stop - Stops the current song, clears the queue and disconnects the bot
+.pause - Pauses the current song
+.resume - Resumes the song
 ```
 """)
 
