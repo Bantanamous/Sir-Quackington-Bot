@@ -115,7 +115,7 @@ class musicplayer(commands.Cog):
         except Exception as e:
             await ctx.send(f"Error resuming: {e}")
 
-    @commands.command(name="quit")
+    @commands.command(name="stop")
     async def stop(self, ctx):
         # stop song
         try:

@@ -24,7 +24,7 @@ General commands:
 .queue - Shows the music queue
 .skip - skips the current song
 .clear - Empties the queue
-.quit - Stops the current song, clears the queue and disconnects the bot
+.stop - Stops the current song, clears the queue and disconnects the bot
 .pause - Pauses the current song
 .resume - Resumes the song
 ```
