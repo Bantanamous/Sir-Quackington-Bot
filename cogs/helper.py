@@ -30,5 +30,14 @@ General commands:
 ```
 """)
 
+    @commands.command(name="cooked")
+        async def cooked(self, ctx):
+            try:
+                with open('./images/cooked.jpg', 'rb') as f:
+                    picture = discord.File(f)
+                    await ctx.send(file=picture)
+            except Exception as e:
+                print(e)
+
 async def setup(bot):
     await bot.add_cog(help(bot))
