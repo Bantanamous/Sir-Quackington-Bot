@@ -1,6 +1,6 @@
 SISDIM Discord Music Bot
 
-This is a python based music bot for the application known as Discord and was created for as a project for the BYU-Idaho CSE 111 (Programming with Functions). 
+This is a python based music bot for the application known as Discord and was created as a project for the BYU-Idaho CSE 111 (Programming with Functions). 
 
 
 Current Commands include:
